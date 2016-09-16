@@ -1,0 +1,11 @@
+# PHPStorm
+/.idea/
+
+# Vagrant
+/.vagrant/
+
+# Composer
+/.vendor/
+
+# NPM
+/node_modules/*

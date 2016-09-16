@@ -1,0 +1,37 @@
+{% extends "index.twig" %}
+
+
+
+{% block title %}
+    {% trans %}
+        Error 403 - Forbidden
+    {% endtrans %}
+{% endblock title %}
+
+
+
+{% block content %}
+
+<div class="page-header">
+    <h1 class="page-header-title">
+        {% trans %}
+            Error 403 - Forbidden
+        {% endtrans %}
+    </h1>
+</div>
+
+
+
+<p class="lead">
+    {% trans with {'%uri%': uri} %}
+        The URI <code>%uri%</code> is forbidden.
+    {% endtrans %}
+</p>
+
+<p class="lead">
+    {% trans with {"%url%": "http://www.checkupdown.com/status/E403.html", "%code%": "403"} %}
+        Alternatively, you can <a href="%url%">learn more about %code% errors</a>.
+    {% endtrans %}
+</p>
+
+{% endblock content %}

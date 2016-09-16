@@ -1,0 +1,10 @@
+router:
+  controllers:
+    - "MyApp\\Controller\\IndexController"
+    - "Sid\\ResourceControllers\\CssController"
+    - "Sid\\ResourceControllers\\JsController"
+    - "MyApp\\Controller\\ErrorController"
+
+  notFound:
+    controller: "MyApp\\Controller\\ErrorController"
+    action:     "error404"

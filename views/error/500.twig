@@ -1,0 +1,37 @@
+{% extends "index.twig" %}
+
+
+
+{% block title %}
+    {% trans %}
+        Error 500 - Internal Server Error
+    {% endtrans %}
+{% endblock title %}
+
+
+
+{% block content %}
+
+<div class="page-header">
+    <h1 class="page-header-title">
+        {% trans %}
+            Error 500 - Internal Server Error
+        {% endtrans %}
+    </h1>
+</div>
+
+
+
+<p class="lead">
+    {% trans %}
+        This page could be loaded due to an internal server error.
+    {% endtrans %}
+</p>
+
+<p class="lead">
+    {% trans with {"%url%": "http://www.checkupdown.com/status/E500.html", "%code%": "405"} %}
+        Alternatively, you can <a href="%url%">learn more about %code% errors</a>.
+    {% endtrans %}
+</p>
+
+{% endblock content %}

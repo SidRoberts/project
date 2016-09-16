@@ -1,0 +1,37 @@
+{% extends "index.twig" %}
+
+
+
+{% block title %}
+    {% trans %}
+        Error 404 - Not Found
+    {% endtrans %}
+{% endblock title %}
+
+
+
+{% block content %}
+
+<div class="page-header">
+    <h1 class="page-header-title">
+        {% trans %}
+            Error 404 - Not Found
+        {% endtrans %}
+    </h1>
+</div>
+
+
+
+<p class="lead">
+    {% trans with {'%uri%': uri} %}
+        The URI <code>%uri%</code> could not be found. Did you type it correctly?
+    {% endtrans %}
+</p>
+
+<p class="lead">
+    {% trans with {"%url%": "http://www.checkupdown.com/status/E404.html", "%code%": "404"} %}
+        Alternatively, you can <a href="%url%">learn more about %code% errors</a>.
+    {% endtrans %}
+</p>
+
+{% endblock content %}

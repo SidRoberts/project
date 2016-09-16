@@ -1,0 +1,22 @@
+language: php
+
+php:
+  - 7.0
+
+sudo: false
+
+install:
+  - composer update --quiet
+
+script:
+  - php .vendor/bin/codecept run unit
+  - find php/ -type f -print0 | xargs -0 -n1 php -l
+  - .vendor/bin/phpcs --config-set show_warnings 0
+  - .vendor/bin/phpcs php/ --standard=psr2
+  - .vendor/bin/phpcs tests/acceptance --standard=psr2
+  - .vendor/bin/phpcs tests/functional --standard=psr2
+  - .vendor/bin/phpcs tests/unit --standard=psr2
+
+notifications:
+  email:
+    - sid@sidroberts.co.uk
