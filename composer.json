@@ -32,12 +32,12 @@
         "php": "~7.0",
 
         "sidroberts/argv-parser":                "~1.0",
-        "sidroberts/container":                  "~1.3",
+        "sidroberts/container":                  "~2.0",
         "sidroberts/cron":                       "~1.0",
         "sidroberts/flash":                      "~1.0",
-        "sidroberts/framework":                  "dev-master",
+        "sidroberts/framework":                  "~1.0",
         "sidroberts/forms":                      "~2.0",
-        "sidroberts/resource-controllers":       "dev-master",
+        "sidroberts/resource-controllers":       "~1.0",
         "sidroberts/twig-whitelisted-functions": "~1.0",
         "sidroberts/url":                        "~1.0",
 
