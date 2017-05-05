@@ -22,7 +22,7 @@ class FlysystemService extends Service
             ""
         );
 
-        $filesystem = new \League\Flysystem\Filesystem($adapter);
+        $flysystem = new \League\Flysystem\Filesystem($adapter);
 
         return $flysystem;
     }
