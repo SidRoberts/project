@@ -4,6 +4,8 @@ namespace MyApp\Bootstrap;
 
 use MyApp\BootstrapDefinition;
 
+use Sid\Container\Container;
+
 class WebDefinition extends BootstrapDefinition
 {
     public function getEnvironment() : string
@@ -11,18 +13,18 @@ class WebDefinition extends BootstrapDefinition
         return "web";
     }
 
-    public function getKernel() : string
-    {
-        return "httpKernel";
-    }
 
-    public function getRequest() : string
-    {
-        return "request";
-    }
 
-    public function handleReturnedValue($response)
+    public function boot(Container $container)
     {
+        $kernel = $container->get("httpKernel");
+
+        $request = $container->get("request");
+
+
+
+        $response = $kernel->handle($request);
+
         $response->send();
     }
 }

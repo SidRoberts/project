@@ -1,6 +1,2 @@
 router:
   controllers: []
-
-  notFound:
-    controller: "MyApp\\Command\\ErrorCommand"
-    action:     "error404"

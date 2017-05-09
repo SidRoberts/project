@@ -4,6 +4,8 @@ namespace MyApp\Bootstrap;
 
 use MyApp\BootstrapDefinition;
 
+use Sid\Container\Container;
+
 class CliDefinition extends BootstrapDefinition
 {
     public function getEnvironment() : string
@@ -11,18 +13,12 @@ class CliDefinition extends BootstrapDefinition
         return "cli";
     }
 
-    public function getKernel() : string
-    {
-        return "cliKernel";
-    }
 
-    public function getRequest() : string
-    {
-        return "cliRequest";
-    }
 
-    public function handleReturnedValue($exitCode)
+    public function boot(Container $container)
     {
-        exit($exitCode);
+        $console = $container->get("console");
+
+        $console->run();
     }
 }

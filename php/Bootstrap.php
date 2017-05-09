@@ -38,20 +38,6 @@ class Bootstrap
     {
         $container = $this->createContainer();
 
-
-
-        $kernel = $container->get(
-            $this->definition->getKernel()
-        );
-
-        $request = $container->get(
-            $this->definition->getRequest()
-        );
-
-
-
-        $response = $kernel->handle($request);
-
-        $this->definition->handleReturnedValue($response);
+        $this->definition->boot($container);
     }
 }

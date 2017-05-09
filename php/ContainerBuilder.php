@@ -7,10 +7,8 @@ use Sid\Container\Container;
 use MyApp\Service\AnnotationsService;
 use MyApp\Service\CacheService;
 use MyApp\Service\CachePoolService;
-use MyApp\Service\CliKernelService;
-use MyApp\Service\CliRequestService;
-use MyApp\Service\CliOutputService;
 use MyApp\Service\ConfigService;
+use MyApp\Service\ConsoleService;
 use MyApp\Service\DispatcherService;
 use MyApp\Service\DoctrineService;
 use MyApp\Service\ElasticsearchService;
@@ -41,10 +39,8 @@ class ContainerBuilder
             AnnotationsService::class,
             CacheService::class,
             CachePoolService::class,
-            CliKernelService::class,
-            CliRequestService::class,
-            CliOutputService::class,
             ConfigService::class,
+            ConsoleService::class,
             DispatcherService::class,
             DoctrineService::class,
             ElasticsearchService::class,
