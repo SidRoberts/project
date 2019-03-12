@@ -2,8 +2,6 @@
 
 namespace MyApp;
 
-use MyApp\Service\EnvironmentService;
-
 use Sid\Container\Container;
 
 class Bootstrap
@@ -22,12 +20,6 @@ class Bootstrap
     public function createContainer() : Container
     {
         $container = ContainerBuilder::build();
-
-        $container->add(
-            new EnvironmentService(
-                $this->definition->getEnvironment()
-            )
-        );
 
         return $container;
     }

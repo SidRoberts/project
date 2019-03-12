@@ -20,25 +20,15 @@ class ConfigService extends Service
         return true;
     }
 
-    public function resolve(string $environment)
+    public function resolve()
     {
         $config = new Config(
             Yaml::parse(
                 file_get_contents(
-                    "config/config.yaml"
+                    "config.yaml"
                 )
             )
         );
-
-        $environmentConfig = new Config(
-            Yaml::parse(
-                file_get_contents(
-                    "config/environment/" . $environment . ".yaml"
-                )
-            )
-        );
-
-        $config->merge($environmentConfig);
 
         return $config;
     }

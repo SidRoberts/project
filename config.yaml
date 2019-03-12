@@ -96,3 +96,22 @@ assets:
         # - "node_modules/bootstrap/js/scrollspy.js"
         # - "node_modules/bootstrap/js/tab.js"
         - "node_modules/bootstrap/js/affix.js"
+
+
+
+console:
+  commands: []
+
+
+
+router:
+  controllers:
+    - "MyApp\\Controller\\IndexController"
+    - "MyApp\\Controller\\ErrorController"
+    - "MyApp\\Controller\\CssController"
+    - "MyApp\\Controller\\JsController"
+
+  notFound:
+    controller: "MyApp\\Controller\\ErrorController"
+    action:     "error404"
+

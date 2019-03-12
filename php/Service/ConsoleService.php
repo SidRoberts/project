@@ -29,7 +29,7 @@ class ConsoleService extends Service
 
 
 
-        $commands = $config->router->controllers;
+        $commands = $config->console->commands;
 
         foreach ($commands as $command) {
             $helloWorldCommand = new $command();
