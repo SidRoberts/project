@@ -21,6 +21,7 @@ use MyApp\Service\MonologService;
 use MyApp\Service\PheanstalkService;
 use MyApp\Service\RedisService;
 use MyApp\Service\RequestService;
+use MyApp\Service\ResolverService;
 use MyApp\Service\RouterService;
 use MyApp\Service\RouteCollectionService;
 use MyApp\Service\SessionService;
@@ -53,6 +54,7 @@ class ContainerBuilder
             PheanstalkService::class,
             RedisService::class,
             RequestService::class,
+            ResolverService::class,
             RouterService::class,
             RouteCollectionService::class,
             SessionService::class,

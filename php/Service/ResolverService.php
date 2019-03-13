@@ -4,15 +4,14 @@ namespace MyApp\Service;
 
 use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
 
+use Sid\Container\Container;
 use Sid\Container\Service;
 
-use Sid\Framework\Dispatcher;
-
-class DispatcherService extends Service
+class ResolverService extends Service
 {
     public function getName() : string
     {
-        return "dispatcher";
+        return "resolver";
     }
 
     public function isShared() : bool
@@ -20,10 +19,10 @@ class DispatcherService extends Service
         return true;
     }
 
-    public function resolve(Resolver $resolver)
+    public function resolve(Container $container)
     {
-        $dispatcher = new Dispatcher($resolver);
+        $resolver = new Resolver($container);
 
-        return $dispatcher;
+        return $resolver;
     }
 }

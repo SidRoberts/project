@@ -3,34 +3,16 @@
 namespace MyApp\Controller;
 
 use Sid\Framework\Controller;
-use Sid\Framework\Router\Annotations\Route;
-
-use Twig_Environment;
+use Sid\Framework\Router\Route\Uri;
 
 class IndexController extends Controller
 {
     /**
-     * @var Twig_Environment
+     * @Uri("/")
      */
-    protected $twig;
-
-
-
-    public function __construct(Twig_Environment $twig)
+    public function index(\Twig\Environment $twig)
     {
-        $this->twig = $twig;
-    }
-
-
-
-    /**
-     * @Route(
-     *     "/"
-     * )
-     */
-    public function index()
-    {
-        return $this->twig->render(
+        return $twig->render(
             "index/index.twig"
         );
     }

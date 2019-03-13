@@ -30,10 +30,6 @@ class HttpKernelService extends Service
             $dispatcher
         );
 
-        $httpKernel->addReturnHandler(
-            new \Sid\Framework\Kernel\ReturnHandler\Response()
-        );
-
         $httpKernel->setNotFoundPath(
             new Path(
                 $config->router->notFound->controller,

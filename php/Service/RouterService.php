@@ -2,7 +2,8 @@
 
 namespace MyApp\Service;
 
-use Sid\Container\Container;
+use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
+
 use Sid\Container\Service;
 
 use Sid\Framework\Router;
@@ -22,9 +23,9 @@ class RouterService extends Service
         return true;
     }
 
-    public function resolve(Container $container, RouteCollection $routeCollection)
+    public function resolve(Resolver $resolver, RouteCollection $routeCollection)
     {
-        $router = new Router($container, $routeCollection);
+        $router = new Router($resolver, $routeCollection);
 
         return $router;
     }

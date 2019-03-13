@@ -4,11 +4,6 @@ namespace MyApp\Service;
 
 use Sid\Container\Service;
 
-use Twig_Loader_Filesystem;
-use Twig_Environment;
-use Twig_Extension_Debug;
-use Twig_SimpleFunction;
-
 use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Sid\TwigWhitelistedFunctions\WhitelistedFunctionsExtension;
 use Sid\Url\Twig\UrlExtension;
@@ -17,6 +12,9 @@ use Sid\Flash\Twig\FlashExtension;
 use Sid\Flash\Flash;
 
 use Sid\Url\Url;
+
+use Twig\Extension\DebugExtension;
+use Twig\Loader\FilesystemLoader;
 
 use Zend\Config\Config;
 
@@ -36,11 +34,11 @@ class TwigService extends Service
 
     public function resolve(Config $config, Translator $translator, Url $url, Flash $flash)
     {
-        $loader = new Twig_Loader_Filesystem(
+        $loader = new FilesystemLoader(
             $config->twig->viewsDir
         );
 
-        $twig = new Twig_Environment(
+        $twig = new \Twig\Environment(
             $loader,
             $config->twig->options->toArray()
         );
@@ -48,7 +46,7 @@ class TwigService extends Service
 
 
         $twig->addExtension(
-            new Twig_Extension_Debug()
+            new DebugExtension()
         );
 
         $twig->addExtension(
