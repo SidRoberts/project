@@ -28,15 +28,14 @@ class ConsoleService extends Service
 
 
 
-
         $commands = $config->console->commands;
 
-        foreach ($commands as $command) {
-            $helloWorldCommand = new $command();
+        foreach ($commands as $commandClassName) {
+            $command = new $commandClassName();
 
-            $helloWorldCommand->setContainer($container);
+            $command->setContainer($container);
 
-            $console->add($helloWorldCommand);
+            $console->add($command);
         }
 
 
