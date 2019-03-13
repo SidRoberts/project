@@ -16,8 +16,6 @@ $whoops->register();
 
 
 
-$bootstrapDefintion = new \MyApp\Bootstrap\WebDefinition();
+$bootstrap = new \MyApp\Bootstrap();
 
-$bootstrap = new \MyApp\Bootstrap($bootstrapDefintion);
-
-$bootstrap->boot();
+$bootstrap->web();

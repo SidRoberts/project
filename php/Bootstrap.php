@@ -4,35 +4,48 @@ namespace MyApp;
 
 use Sid\Container\Container;
 
+use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
+
 class Bootstrap
 {
     /**
-     * @var BootstrapDefinition
+     * @var Container
      */
-    protected $definition;
+    protected $container;
 
 
 
-    public function __construct(BootstrapDefinition $definition)
+    public function __construct()
     {
-        $this->definition = $definition;
+        $this->container = ContainerBuilder::build();
     }
 
 
 
-    public function createContainer() : Container
-    {
-        $container = ContainerBuilder::build();
 
-        return $container;
+    public function getContainer() : Container
+    {
+        return $this->container;
     }
 
 
 
-    public function boot()
+    public function web()
     {
-        $container = $this->createContainer();
+        $httpKernel = $this->container->get("httpKernel");
+        $request    = $this->container->get("request");
 
-        $this->definition->boot($container);
+
+
+        $response = $httpKernel->handle($request);
+
+        $response->send();
+    }
+
+    public function cli()
+    {
+        $console = $this->container->get("console");
+
+        $console->run();
     }
 }

@@ -13,11 +13,9 @@ class ErrorControllerTest extends \Codeception\TestCase\Test
 
     protected function _before()
     {
-        $bootstrapDefintion = new \MyApp\Bootstrap\WebDefinition();
+        $bootstrap = new \MyApp\Bootstrap();
 
-        $bootstrap = new \MyApp\Bootstrap($bootstrapDefintion);
-
-        $this->container = $bootstrap->createContainer();
+        $this->container = $bootstrap->getContainer();
     }
 
     protected function _after()
@@ -28,9 +26,7 @@ class ErrorControllerTest extends \Codeception\TestCase\Test
 
     public function testError500StatusCode()
     {
-        $container = $this->container;
-
-        $httpKernel = $container->get("httpKernel");
+        $httpKernel = $this->container->get("httpKernel");
 
 
 

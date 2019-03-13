@@ -17,8 +17,6 @@ $whoops->register();
 
 
 
-$bootstrapDefintion = new \MyApp\Bootstrap\CliDefinition();
+$bootstrap = new \MyApp\Bootstrap();
 
-$bootstrap = new \MyApp\Bootstrap($bootstrapDefintion);
-
-$bootstrap->boot();
+$bootstrap->cli();

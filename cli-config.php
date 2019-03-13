@@ -6,9 +6,7 @@ require '.vendor/autoload.php';
 
 
 
-$bootstrapDefintion = new \MyApp\Bootstrap\CliDefinition();
-
-$bootstrap = new \MyApp\Bootstrap($bootstrapDefintion);
+$bootstrap = new \MyApp\Bootstrap();
 
 
 
