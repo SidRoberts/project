@@ -6,6 +6,9 @@ use Sid\Container\Container;
 
 class Bootstrap
 {
+    /**
+     * @var BootstrapDefinition
+     */
     protected $definition;
 
 
