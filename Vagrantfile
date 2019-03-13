@@ -2,8 +2,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-	config.vm.box     = "vagrant-box-20160918"
-	config.vm.box_url = "https://www.dropbox.com/s/hfz04tzcsog55wz/vagrant-box-20160918.vbox?dl=1"
+	config.vm.box = "ubuntu/bionic64"
+
+
 
 	config.vm.synced_folder ".", "/app", :user => "vagrant", :group => "vagrant"
 
@@ -11,7 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 	config.vm.provision "shell" do |shell|
 		shell.path = "install.sh"
-		shell.args = "vagrant /app"
 	end
 
 
