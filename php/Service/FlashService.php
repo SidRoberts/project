@@ -5,7 +5,7 @@ namespace MyApp\Service;
 use Sid\Container\Service;
 
 use Sid\Flash\Flash;
-use Sid\Flash\Formatter\Html as HtmlFormatter;
+use Sid\Flash\Formatter\HtmlFormatter;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 
