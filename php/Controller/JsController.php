@@ -28,7 +28,7 @@ class JsController extends Controller
      *     collection="MyApp\Converter\JsCollectionConverter"
      * )
      */
-    public function js(Parameters $parameters, Config $config)
+    public function js(Parameters $parameters)
     {
         $collection = $parameters->get("collection");
 
