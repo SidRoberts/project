@@ -2,6 +2,10 @@
 
 namespace MyApp\Service;
 
+use Exception;
+
+use MyApp\Console\Command;
+
 use Sid\Container\Container;
 use Sid\Container\Service;
 
@@ -30,9 +34,13 @@ class ConsoleService extends Service
         $commands = $config->console->commands;
 
         foreach ($commands as $commandClassName) {
-            $command = new $commandClassName();
+            if (!is_subclass_of($commandClassName, Command::class)) {
+                throw new Exception(
+                    $commandClassName . " is not a subclass of " . Command::class
+                );
+            }
 
-            $command->setContainer($container);
+            $command = new $commandClassName($container);
 
             $console->add($command);
         }
