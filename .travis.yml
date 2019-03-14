@@ -16,6 +16,7 @@ script:
   - .vendor/bin/phpcs tests/acceptance --standard=psr2
   - .vendor/bin/phpcs tests/functional --standard=psr2
   - .vendor/bin/phpcs tests/unit --standard=psr2
+  - .vendor/bin/security-checker security:check
 
 notifications:
   email:
