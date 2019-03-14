@@ -2,9 +2,13 @@
 
 namespace MyApp\Tests\Unit\Controller;
 
+use Codeception\TestCase\Test;
+
+use MyApp\Bootstrap;
+
 use Symfony\Component\HttpFoundation\Request;
 
-class ErrorControllerTest extends \Codeception\TestCase\Test
+class ErrorControllerTest extends Test
 {
     /**
      * @var \UnitTester
@@ -13,7 +17,7 @@ class ErrorControllerTest extends \Codeception\TestCase\Test
 
     protected function _before()
     {
-        $bootstrap = new \MyApp\Bootstrap();
+        $bootstrap = new Bootstrap();
 
         $this->container = $bootstrap->getContainer();
     }

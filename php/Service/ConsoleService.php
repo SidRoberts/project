@@ -2,13 +2,12 @@
 
 namespace MyApp\Service;
 
+use Sid\Container\Container;
 use Sid\Container\Service;
 
-use Sid\Container\Container;
+use Symfony\Component\Console\Application;
 
 use Zend\Config\Config;
-
-use Symfony\Component\Console\Application;
 
 class ConsoleService extends Service
 {

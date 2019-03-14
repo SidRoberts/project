@@ -6,7 +6,13 @@ require '.vendor/autoload.php';
 
 
 
-$bootstrap = new \MyApp\Bootstrap();
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+
+use MyApp\Bootstrap;
+
+
+
+$bootstrap = new Bootstrap();
 
 
 
@@ -14,4 +20,4 @@ $container = $bootstrap->createContainer();
 
 $doctrine = $container->get("doctrine");
 
-return \Doctrine\ORM\Tools\Console\ConsoleRunner::createHelperSet($doctrine);
+return ConsoleRunner::createHelperSet($doctrine);

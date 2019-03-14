@@ -6,16 +6,22 @@ require ".vendor/autoload.php";
 
 
 
+use MyApp\Bootstrap;
+
+use Whoops\Handler\PrettyPageHandler;
+
+
+
 $whoops = new \Whoops\Run;
 
 $whoops->pushHandler(
-    new \Whoops\Handler\PrettyPageHandler()
+    new PrettyPageHandler()
 );
 
 $whoops->register();
 
 
 
-$bootstrap = new \MyApp\Bootstrap();
+$bootstrap = new Bootstrap();
 
 $bootstrap->web();
