@@ -36,7 +36,11 @@ class ConsoleService extends Service
         foreach ($commands as $commandClassName) {
             if (!is_subclass_of($commandClassName, Command::class)) {
                 throw new Exception(
-                    $commandClassName . " is not a subclass of " . Command::class
+                    sprintf(
+                        "%s is not a subclass of %s",
+                        $commandClassName,
+                        Command::class
+                    )
                 );
             }
 
