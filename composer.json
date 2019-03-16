@@ -31,7 +31,6 @@
     "require": {
         "php": "~7.2",
 
-        "sidroberts/argv-parser":                "~1.0",
         "sidroberts/container":                  "~3.0",
         "sidroberts/cron":                       "~1.0",
         "sidroberts/flash":                      "~3.0",
