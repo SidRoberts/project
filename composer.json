@@ -4,11 +4,6 @@
 
 
 
-    "prefer-stable":     true,
-    "minimum-stability": "dev",
-
-
-
     "config": {
         "vendor-dir":     ".vendor/",
         "components-dir": ".components/"
@@ -34,7 +29,7 @@
         "sidroberts/container":                  "~3.0",
         "sidroberts/cron":                       "~1.0",
         "sidroberts/flash":                      "~3.0",
-        "sidroberts/framework":                  "dev-master",
+        "sidroberts/framework":                  "dev-master@dev",
         "sidroberts/forms":                      "~2.0",
         "sidroberts/twig-whitelisted-functions": "~2.0",
         "sidroberts/url":                        "~1.0",
@@ -80,7 +75,7 @@
 
     "require-dev": {
         "codeception/codeception": "~2.5",
-        "phpunit/php-code-coverage": "~7.0",
+        "phpunit/php-code-coverage": "~6.0",
 
         "squizlabs/php_codesniffer": "~3.4",
 
