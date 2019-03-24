@@ -29,7 +29,7 @@
         "sidroberts/container":                  "~3.0",
         "sidroberts/cron":                       "~1.0",
         "sidroberts/flash":                      "~3.0",
-        "sidroberts/framework":                  "dev-master@dev",
+        "sidroberts/framework":                  "~4.0",
         "sidroberts/forms":                      "~3.0",
         "sidroberts/twig-whitelisted-functions": "~2.0",
         "sidroberts/url":                        "~1.0",
