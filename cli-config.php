@@ -16,7 +16,7 @@ $bootstrap = new Bootstrap();
 
 
 
-$container = $bootstrap->createContainer();
+$container = $bootstrap->getContainer();
 
 $doctrine = $container->get("doctrine");
 

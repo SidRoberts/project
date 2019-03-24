@@ -2,7 +2,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-	config.vm.box = "ubuntu/bionic64"
+	config.vm.box     = "vagrant-box-20190324"
+	config.vm.box_url = "https://www.dropbox.com/s/1jhyty9kmhjtqjr/vagrant-box-20190324.vbox?dl=1"
 
 
 
