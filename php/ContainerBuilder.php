@@ -6,7 +6,6 @@ use Sid\Container\Container;
 
 use MyApp\Service\AnnotationsService;
 use MyApp\Service\CacheService;
-use MyApp\Service\CachePoolService;
 use MyApp\Service\ConfigService;
 use MyApp\Service\ConsoleService;
 use MyApp\Service\DispatcherService;
@@ -39,7 +38,6 @@ class ContainerBuilder
         $serviceClasses = [
             AnnotationsService::class,
             CacheService::class,
-            CachePoolService::class,
             ConfigService::class,
             ConsoleService::class,
             DispatcherService::class,
