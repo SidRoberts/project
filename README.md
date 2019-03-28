@@ -2,8 +2,14 @@
 
 The starting point for all my projects.
 
-[![Build Status](https://travis-ci.org/SidRoberts/project.svg?branch=master)](https://travis-ci.org/SidRoberts/project)
-[![GitHub tag](https://img.shields.io/github/tag/sidroberts/project.svg?maxAge=2592000)]()
+
+
+[![Build Status](https://img.shields.io/travis/SidRoberts/project/master.svg?style=for-the-badge)](https://travis-ci.org/SidRoberts/project)
+
+[![License](https://img.shields.io/github/license/SidRoberts/project.svg?style=for-the-badge)]()
+
+[![GitHub issues](https://img.shields.io/github/issues-raw/SidRoberts/project.svg?style=for-the-badge)](https://github.com/SidRoberts/project/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/SidRoberts/project.svg?style=for-the-badge)](https://github.com/SidRoberts/project/pulls)
 
 
 
