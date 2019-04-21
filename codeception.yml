@@ -19,12 +19,6 @@ suites:
                     url: http://127.0.0.1:80/
         coverage:
             enabled: false
-    functional:
-        path: functional
-        actor: FunctionalTester
-        modules:
-            enabled:
-                - Asserts
     unit:
         path: unit
         actor: UnitTester
