@@ -9,3 +9,6 @@
 
 # NPM
 /node_modules/*
+
+# Codeception
+/tests/_support/_generated/
