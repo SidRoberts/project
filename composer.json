@@ -11,9 +11,10 @@
 
     "authors": [
         {
-            "name":  "Sid Roberts",
-            "email": "sid@sidroberts.co.uk",
-            "role":  "Creator"
+            "name":     "Sid Roberts",
+            "email":    "sid@sidroberts.co.uk",
+            "homepage": "https://sidroberts.co.uk",
+            "role":     "Creator"
         }
     ],
 
