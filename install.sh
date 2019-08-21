@@ -1,28 +1,17 @@
 #!/bin/bash
 
-
-
-################################################################################
 # Any errors should stop the script from continuing.
 set -e
 
-
-
-################################################################################
 # Prepare for an unattended installation
 export DEBIAN_FRONTEND=noninteractive
 
 
 
 ################################################################################
-# Update apt
+# Update apt and packages
 
 sudo apt-get -y update
-
-
-
-################################################################################
-# Upgrade all software
 
 sudo apt-get -y dist-upgrade
 
