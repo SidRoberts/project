@@ -10,7 +10,6 @@ use MyApp\Service\ConfigService;
 use MyApp\Service\ConsoleService;
 use MyApp\Service\DispatcherService;
 use MyApp\Service\DoctrineService;
-use MyApp\Service\ElasticsearchService;
 use MyApp\Service\EscaperService;
 use MyApp\Service\EventDispatcherService;
 use MyApp\Service\FlashService;
@@ -42,7 +41,6 @@ class ContainerBuilder
             ConsoleService::class,
             DispatcherService::class,
             DoctrineService::class,
-            ElasticsearchService::class,
             EscaperService::class,
             EventDispatcherService::class,
             FlashService::class,

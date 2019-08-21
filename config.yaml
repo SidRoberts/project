@@ -22,13 +22,6 @@ pheanstalk:
 
 
 
-elasticsearch: 
-  host:  "localhost"
-  port:  "9200"
-  index: "pomelo"
-
-
-
 redis:
   host: "localhost"
   port: "6379"
