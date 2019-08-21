@@ -32,7 +32,7 @@ twig:
   viewsDir: "views/"
   options:
     debug:            *dev_mode
-    cache:            "/tmp/pomelo/twig/"
+    cache:            "/tmp/app/twig/"
     strict_variables: true
 
   whitelistedFunctions:
@@ -48,7 +48,7 @@ twig:
 
 
 annotations:
-  cache: "/tmp/pomelo/annotations/"
+  cache: "/tmp/app/annotations/"
 
 
 
@@ -70,7 +70,7 @@ translator:
 
 assets:
   css:
-    cacheDir: "/tmp/pomelo/css/"
+    cacheDir: "/tmp/app/css/"
     collections:
       main: "less/_.less"
   js:
