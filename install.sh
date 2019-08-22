@@ -6,6 +6,8 @@ set -e
 # Prepare for an unattended installation
 export DEBIAN_FRONTEND=noninteractive
 
+cd /app/
+
 
 
 ################################################################################
@@ -28,8 +30,6 @@ sudo service nginx restart
 
 ################################################################################
 # Install dependencies
-
-cd /app/
 
 npm install
 
