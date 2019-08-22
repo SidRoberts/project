@@ -27,18 +27,11 @@ sudo service nginx restart
 
 
 ################################################################################
-# Install NPM dependencies
+# Install dependencies
 
 cd /app/
 
 npm install
-
-
-
-################################################################################
-# Install Composer dependencies
-
-cd /app/
 
 composer install --no-interaction
 
