@@ -40,8 +40,7 @@ composer install --no-interaction
 ###############################################################################
 ## Cron
 
-echo "* * * * * vagrant /usr/bin/php /app/cli.php background/manager" | sudo tee -a /etc/cron.d/app
-echo "* * * * * vagrant /usr/bin/php /app/cli.php cron"               | sudo tee -a /etc/cron.d/app
+sudo cp cron /etc/cron.d/app
 
 
 
