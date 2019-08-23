@@ -4,18 +4,22 @@ php:
   - 7.2
 
 install:
+  - docker-compose build
+  - travis_retry npm install
   - travis_retry composer update --no-interaction --no-progress
 
 script:
-  - .vendor/bin/codecept run
-  - find php/ -type f -print0 | xargs -0 -n1 php -l
-  - .vendor/bin/phpcs --config-set show_warnings 0
-  - .vendor/bin/phpcs php/ --standard=psr2
-  - .vendor/bin/phpcs tests/acceptance/ --standard=psr2
-  - .vendor/bin/phpcs tests/unit/ --standard=psr2
-  - .vendor/bin/phpcs tests/_support/ --standard=psr2
-  - .vendor/bin/security-checker security:check
-  - .vendor/bin/phpmd php/,tests/acceptance/,tests/unit/,tests/_support/ text codesize
+  - docker-compose up -d
+  - docker-compose exec background .vendor/bin/codecept run
+  - docker-compose exec background find php/ -type f -print0 | xargs -0 -n1 php -l
+  - docker-compose exec background .vendor/bin/phpcs --config-set show_warnings 0
+  - docker-compose exec background .vendor/bin/phpcs php/ --standard=psr2
+  - docker-compose exec background .vendor/bin/phpcs tests/acceptance/ --standard=psr2
+  - docker-compose exec background .vendor/bin/phpcs tests/unit/ --standard=psr2
+  - docker-compose exec background .vendor/bin/phpcs tests/_support/ --standard=psr2
+  - docker-compose exec background .vendor/bin/security-checker security:check
+  - docker-compose exec background .vendor/bin/phpmd php/,tests/acceptance/,tests/unit/,tests/_support/ text codesize
+  - docker-compose stop
 
 notifications:
   email:
