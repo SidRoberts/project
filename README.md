@@ -16,6 +16,8 @@ The starting point for all my projects.
 ```bash
 composer create-project sidroberts/project
 
+npm install
+
 vagrant up && vagrant ssh
 ```
 
