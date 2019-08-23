@@ -18,7 +18,10 @@ composer create-project sidroberts/project
 
 npm install
 
-vagrant up && vagrant ssh
+docker-compose up -d
+
+# Seed the database
+docker-compose exec background .vendor/bin/doctrine orm:schema-tool:create
 ```
 
 

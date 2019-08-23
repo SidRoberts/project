@@ -1,0 +1,37 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1
+    links:
+    - php
+    ports:
+        - "8080:80"
+    volumes:
+        - .:/app/
+        - ./site.conf:/etc/nginx/conf.d/site.conf
+  php:
+    image: php:7.3-fpm
+    links:
+    - postgres
+    - redis
+    - memcached
+    - beanstalkd
+    volumes:
+        - .:/app/
+  background:
+    build: background
+    links:
+    - postgres
+    - redis
+    - memcached
+    - beanstalkd
+    volumes:
+        - .:/app/
+  postgres:
+    image: postgres:11
+  redis:
+    image: redis:5
+  memcached:
+    image: memcached:1
+  beanstalkd:
+    image: schickling/beanstalkd:latest

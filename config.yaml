@@ -9,7 +9,7 @@ url:
 
 doctrine: 
   driver:   "pdo_pgsql"
-  host:     "localhost"
+  host:     "postgres"
   user:     "pomelo"
   password: "pomelo"
   dbname:   "pomelo"
@@ -17,13 +17,13 @@ doctrine:
 
 
 pheanstalk: 
-  host: "localhost"
+  host: "beanstalkd"
   port: "11300"
 
 
 
 redis:
-  host: "localhost"
+  host: "redis"
   port: "6379"
 
 
