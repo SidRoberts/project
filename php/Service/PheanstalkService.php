@@ -22,7 +22,7 @@ class PheanstalkService extends Service
 
     public function resolve(Config $config)
     {
-        $pheanstalk = new Pheanstalk(
+        $pheanstalk = Pheanstalk::create(
             $config->pheanstalk->host,
             $config->pheanstalk->port
         );
