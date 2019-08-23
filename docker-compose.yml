@@ -8,7 +8,7 @@ services:
         - "80:80"
     volumes:
         - .:/app/
-        - ./site.conf:/etc/nginx/conf.d/site.conf
+        - ./deploy/site.conf:/etc/nginx/conf.d/site.conf
   php:
     image: php:7.3-fpm
     links:
@@ -19,7 +19,7 @@ services:
     volumes:
         - .:/app/
   background:
-    build: background
+    build: deploy/background/
     links:
     - postgres
     - redis
