@@ -1,2 +1,2 @@
-* * * * * vagrant /usr/bin/php /app/cli.php background/manager
+* * * * * vagrant /usr/bin/php /app/cli.php background:manager
 * * * * * vagrant /usr/bin/php /app/cli.php cron

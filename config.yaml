@@ -93,7 +93,10 @@ assets:
 
 
 console:
-  commands: []
+  commands:
+    - "MyApp\\Command\\Background\\ManagerCommand"
+    - "MyApp\\Command\\Background\\RaiseCommand"
+    - "MyApp\\Command\\Background\\WorkerCommand"
 
 
 
