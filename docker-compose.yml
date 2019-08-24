@@ -10,7 +10,7 @@ services:
         - .:/app/
         - ./deploy/site.conf:/etc/nginx/conf.d/site.conf
   php:
-    image: php:7.3-fpm
+    image: php:7.3-fpm-alpine
     links:
     - postgres
     - redis
