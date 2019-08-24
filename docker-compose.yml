@@ -28,10 +28,10 @@ services:
     volumes:
         - .:/app/
   postgres:
-    image: postgres:11
+    image: postgres:11-alpine
   redis:
-    image: redis:5
+    image: redis:5-alpine
   memcached:
-    image: memcached:1
+    image: memcached:1-alpine
   beanstalkd:
     image: schickling/beanstalkd:latest
