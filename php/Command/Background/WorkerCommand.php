@@ -28,17 +28,17 @@ class WorkerCommand extends \MyApp\Console\Command
             true
         );
 
-        if (!isset($body["command"])) {
-            throw new \Exception("No command given");
-        }
-
-        $jobInput = new ArrayInput($body);
-
-        $command = $this->getApplication()->find(
-            $body["command"]
-        );
-
         try {
+            if (!isset($body["command"])) {
+                throw new \Exception("No command given");
+            }
+
+            $jobInput = new ArrayInput($body);
+
+            $command = $this->getApplication()->find(
+                $body["command"]
+            );
+
             $command->run($jobInput, $output);
 
             $pheanstalk->delete($job);
