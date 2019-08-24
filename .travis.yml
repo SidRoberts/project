@@ -20,6 +20,7 @@ before_script:
 
 script:
   - docker-compose up -d
+  - docker-compose exec background .vendor/bin/doctrine orm:schema-tool:create
   - docker-compose exec background .vendor/bin/codecept run
   - docker-compose stop
 
