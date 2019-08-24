@@ -3,6 +3,8 @@ language: php
 php:
   - 7.3
 
+dist: bionic
+
 install:
   - docker-compose build
   - travis_retry npm install
