@@ -10,9 +10,9 @@ url:
 doctrine: 
   driver:   "pdo_pgsql"
   host:     "postgres"
-  user:     "pomelo"
-  password: "pomelo"
-  dbname:   "pomelo"
+  user:     "postgres"
+  password: ""
+  dbname:   "postgres"
 
 
 
