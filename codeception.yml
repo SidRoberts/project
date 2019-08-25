@@ -15,7 +15,7 @@ suites:
             enabled:
                 - Asserts
                 - PhpBrowser:
-                    url: http://127.0.0.1:80/
+                    url: http://nginx:80/
         coverage:
             enabled: false
     unit:
