@@ -8,7 +8,7 @@ services:
         - "80:80"
     volumes:
         - .:/app/
-        - ./deploy/site.conf:/etc/nginx/conf.d/site.conf
+        - ./deploy/nginx/site.conf:/etc/nginx/conf.d/site.conf
   php:
     build: deploy/php/
     links:
