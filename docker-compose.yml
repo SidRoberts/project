@@ -21,6 +21,7 @@ services:
   background:
     build: deploy/background/
     links:
+    - nginx
     - postgres
     - redis
     - memcached
