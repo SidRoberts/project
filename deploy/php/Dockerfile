@@ -1,4 +1,4 @@
-FROM php:7.3-cli-alpine
+FROM php:7.3-fpm-alpine
 
 # Install Postgres PHP extension
 RUN apk add postgresql-dev \
@@ -8,7 +8,3 @@ RUN apk add postgresql-dev \
         libsasl \
         db \
     && rm -rf /tmp/* /var/cache/apk/*
-
-WORKDIR /app
-
-CMD [ "php", "/app/cli.php", "background:manager" ]
