@@ -3,31 +3,31 @@ services:
   nginx:
     image: nginx:1-alpine
     links:
-    - php
+      - php
     ports:
-        - "80:80"
+      - "80:80"
     volumes:
-        - .:/app/
-        - ./deploy/nginx/site.conf:/etc/nginx/conf.d/site.conf
+      - .:/app/
+      - ./deploy/nginx/site.conf:/etc/nginx/conf.d/site.conf
   php:
     build: deploy/php/
     links:
-    - postgres
-    - redis
-    - memcached
-    - beanstalkd
+      - postgres
+      - redis
+      - memcached
+      - beanstalkd
     volumes:
-        - .:/app/
+      - .:/app/
   background:
     build: deploy/background/
     links:
-    - nginx
-    - postgres
-    - redis
-    - memcached
-    - beanstalkd
+      - nginx
+      - postgres
+      - redis
+      - memcached
+      - beanstalkd
     volumes:
-        - .:/app/
+      - .:/app/
   postgres:
     image: postgres:11-alpine
   redis:
