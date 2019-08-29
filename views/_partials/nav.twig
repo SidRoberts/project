@@ -1,51 +1,43 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container">
 
-        <div class="navbar-header">
+        <a href="{{ url('') }}" class="navbar-brand">
+            {% trans %}New Project{% endtrans %}
+        </a>
 
-            <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">{% trans %}Toggle navigation{% endtrans %}</span>
-                
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" data-controls="#navbar" aria-expanded="false" aria-label="{% trans %}Toggle navigation{% endtrans %}">
+            <span class="sr-only">{% trans %}Toggle navigation{% endtrans %}</span>
             
-            <a href="{{ url('') }}" class="navbar-brand">
-                {% trans %}New Project{% endtrans %}
-            </a>
-
-        </div>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         
         
         
         <div class="collapse navbar-collapse" id="navbar">
 
-            <ul class="nav navbar-nav navbar-left">
-                <li>
-                    <a href="#">
+            <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
                         A
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
                         B
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
                         C
                     </a>
                 </li>
             </ul>
 
-
-
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <abbr title="English">EN</abbr>
 
                         <span class="caret"></span>
@@ -55,7 +47,7 @@
 
                     <ul class="dropdown-menu">
                         {% for languageCode in languageCodes %}
-                            <li>
+                            <li class="dropdown-item">
                                 <a href="#{{ languageCode }}">
                                     {{ "language"|trans({}, null, languageCode) }}
                                 </a>

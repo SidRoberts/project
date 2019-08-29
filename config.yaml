@@ -68,30 +68,6 @@ translator:
 
 
 
-assets:
-  css:
-    cacheDir: "/tmp/app/css/"
-    collections:
-      main: "less/_.less"
-  js:
-    collections:
-      footer:
-        # Bootstrap
-        - "node_modules/bootstrap/js/transition.js"
-        - "node_modules/bootstrap/js/alert.js"
-        - "node_modules/bootstrap/js/button.js"
-        # - "node_modules/bootstrap/js/carousel.js"
-        - "node_modules/bootstrap/js/collapse.js"
-        - "node_modules/bootstrap/js/dropdown.js"
-        - "node_modules/bootstrap/js/modal.js"
-        # - "node_modules/bootstrap/js/tooltip.js"
-        # - "node_modules/bootstrap/js/popover.js"
-        # - "node_modules/bootstrap/js/scrollspy.js"
-        # - "node_modules/bootstrap/js/tab.js"
-        - "node_modules/bootstrap/js/affix.js"
-
-
-
 console:
   commands:
     - "MyApp\\Command\\Background\\ManagerCommand"
@@ -104,10 +80,7 @@ router:
   controllers:
     - "MyApp\\Controller\\IndexController"
     - "MyApp\\Controller\\ErrorController"
-    - "MyApp\\Controller\\CssController"
-    - "MyApp\\Controller\\JsController"
 
   notFound:
     controller: "MyApp\\Controller\\ErrorController"
     action:     "error404"
-

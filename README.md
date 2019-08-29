@@ -18,6 +18,8 @@ composer create-project sidroberts/project
 
 npm install
 
+npm run compile-css
+
 docker-compose up -d
 
 # Seed the database
