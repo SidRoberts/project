@@ -47,30 +47,6 @@
 
 @import "forms";
 
-
-
-header {
-    margin-bottom: 2rem;
-
-    & > nav {
-        @extend .navbar-dark;
-        @extend .bg-primary;
-    }
-}
-
-footer {
-    margin-top: 2rem;
-
-    & > nav {
-        @extend .navbar-dark;
-        @extend .bg-dark;
-    }
-}
-
-header, footer {
-    & > nav {
-        @extend .navbar-expand-md;
-    }
-}
+@import "header-footer";
 
 @import "tables";
