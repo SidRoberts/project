@@ -1,0 +1,13 @@
+table {
+    @extend .table;
+    @extend .table-striped;
+    @extend .table-borderless;
+
+    & > thead {
+        @extend .thead-dark;
+    }
+
+    th, td {
+        vertical-align: middle;
+    }
+}
