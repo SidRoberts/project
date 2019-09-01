@@ -1,33 +1,35 @@
-<footer class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
+<footer>
+    <nav class="navbar">
+        <div class="container">
 
-        <span class="navbar-text">
-            <span class="far fa-copyright fa-fw"></span>
+            <span class="navbar-text">
+                <span class="far fa-copyright fa-fw"></span>
 
-            2019 <a href="https://sidroberts.co.uk/">{% trans %}Sid Roberts{% endtrans %}</a>
-        </span>
+                2019 <a href="https://sidroberts.co.uk/">{% trans %}Sid Roberts{% endtrans %}</a>
+            </span>
 
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropup">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <abbr title="English">EN</abbr>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <abbr title="English">EN</abbr>
 
-                    <span class="caret"></span>
-                </a>
+                        <span class="caret"></span>
+                    </a>
 
-                {% set languageCodes = translatorLocales %}
+                    {% set languageCodes = translatorLocales %}
 
-                <ul class="dropdown-menu">
-                    {% for languageCode in languageCodes %}
-                        <li>
-                            <a href="#{{ languageCode }}" class="dropdown-item">
-                                {{ "language"|trans({}, null, languageCode) }}
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        {% for languageCode in languageCodes %}
+                            <li>
+                                <a href="#{{ languageCode }}" class="dropdown-item">
+                                    {{ "language"|trans({}, null, languageCode) }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
 
-    </div>
+        </div>
+    </nav>
 </footer>
