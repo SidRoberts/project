@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "variables";
 
 @import "../node_modules/bootstrap/scss/_functions.scss";
 @import "../node_modules/bootstrap/scss/_variables.scss";
@@ -43,11 +43,9 @@
 
 
 
-@import "fonts.scss";
+@import "fonts";
 
-
-
-@import "forms.scss";
+@import "forms";
 
 
 
