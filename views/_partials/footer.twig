@@ -19,8 +19,8 @@
 
                 <ul class="dropdown-menu">
                     {% for languageCode in languageCodes %}
-                        <li class="dropdown-item">
-                            <a href="#{{ languageCode }}">
+                        <li>
+                            <a href="#{{ languageCode }}" class="dropdown-item">
                                 {{ "language"|trans({}, null, languageCode) }}
                             </a>
                         </li>
