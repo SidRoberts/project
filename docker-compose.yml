@@ -14,7 +14,6 @@ services:
     links:
       - postgres
       - redis
-      - memcached
       - beanstalkd
     volumes:
       - .:/app/
@@ -24,7 +23,6 @@ services:
       - nginx
       - postgres
       - redis
-      - memcached
       - beanstalkd
     volumes:
       - .:/app/
@@ -32,7 +30,5 @@ services:
     image: postgres:11-alpine
   redis:
     image: redis:5-alpine
-  memcached:
-    image: memcached:1-alpine
   beanstalkd:
     image: schickling/beanstalkd:latest
