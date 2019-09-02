@@ -2,12 +2,12 @@ isDevMode: &dev_mode true
 
 
 
-url: 
+url:
   baseUri: "/"
 
 
 
-doctrine: 
+doctrine:
   driver:   "pdo_pgsql"
   host:     "postgres"
   user:     "postgres"
@@ -16,7 +16,7 @@ doctrine:
 
 
 
-pheanstalk: 
+pheanstalk:
   host: "beanstalkd"
   port: "11300"
 
