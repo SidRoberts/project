@@ -41,9 +41,6 @@ twig:
     - "substr"
     - "ucfirst"
     - "uclast"
-    - "http_build_query"
-    - "get_class"
-    - "var_export"
 
 
 
