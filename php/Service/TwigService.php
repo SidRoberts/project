@@ -4,7 +4,6 @@ namespace MyApp\Service;
 
 use Sid\Container\Service;
 
-use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Sid\TwigWhitelistedFunctions\WhitelistedFunctionsExtension;
 use Sid\Url\Twig\UrlExtension;
 use Sid\Flash\Twig\FlashExtension;
@@ -18,8 +17,6 @@ use Twig\Loader\FilesystemLoader;
 
 use Zend\Config\Config;
 
-use Symfony\Component\Translation\Translator;
-
 class TwigService extends Service
 {
     public function getName() : string
@@ -32,7 +29,7 @@ class TwigService extends Service
         return false;
     }
 
-    public function resolve(Config $config, Translator $translator, Url $url, Flash $flash)
+    public function resolve(Config $config, Url $url, Flash $flash)
     {
         $loader = new FilesystemLoader(
             $config->twig->viewsDir
@@ -61,17 +58,6 @@ class TwigService extends Service
 
         $twig->addExtension(
             new FlashExtension($flash)
-        );
-
-        $twig->addExtension(
-            new TranslationExtension($translator)
-        );
-
-
-
-        $twig->addGlobal(
-            "translatorLocales",
-            $config->translator->locales->toArray()
         );
 
 

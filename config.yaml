@@ -54,17 +54,6 @@ tag:
 
 
 
-translator:
-  locales:
-    - en
-    - fr
-    - vn
-    - ko
-  fallbackLocales:
-    - en
-
-
-
 console:
   commands:
     - "MyApp\\Command\\Background\\ManagerCommand"

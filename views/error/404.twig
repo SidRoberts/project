@@ -3,9 +3,7 @@
 
 
 {% block title %}
-    {% trans %}
-        Error 404 - Not Found
-    {% endtrans %}
+    Error 404 - Not Found
 {% endblock title %}
 
 
@@ -14,24 +12,19 @@
 
 <div class="page-header">
     <h1 class="page-header-title">
-        {% trans %}
-            Error 404 - Not Found
-        {% endtrans %}
+        Error 404 - Not Found
     </h1>
 </div>
 
 
 
 <p class="lead">
-    {% trans with {'%uri%': uri} %}
-        The URI <code>%uri%</code> could not be found. Did you type it correctly?
-    {% endtrans %}
+    The URI <code>{{ uri }}</code> could not be found.
+    Did you type it correctly?
 </p>
 
 <p class="lead">
-    {% trans with {"%url%": "http://www.checkupdown.com/status/E404.html", "%code%": "404"} %}
-        Alternatively, you can <a href="%url%">learn more about %code% errors</a>.
-    {% endtrans %}
+    Alternatively, you can <a href="http://www.checkupdown.com/status/E404.html">learn more about 404 errors</a>.
 </p>
 
 {% endblock content %}

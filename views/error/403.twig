@@ -3,9 +3,7 @@
 
 
 {% block title %}
-    {% trans %}
-        Error 403 - Forbidden
-    {% endtrans %}
+    Error 403 - Forbidden
 {% endblock title %}
 
 
@@ -14,24 +12,18 @@
 
 <div class="page-header">
     <h1 class="page-header-title">
-        {% trans %}
-            Error 403 - Forbidden
-        {% endtrans %}
+        Error 403 - Forbidden
     </h1>
 </div>
 
 
 
 <p class="lead">
-    {% trans with {'%uri%': uri} %}
-        The URI <code>%uri%</code> is forbidden.
-    {% endtrans %}
+    The URI <code>{{ uri }}</code> is forbidden.
 </p>
 
 <p class="lead">
-    {% trans with {"%url%": "http://www.checkupdown.com/status/E403.html", "%code%": "403"} %}
-        Alternatively, you can <a href="%url%">learn more about %code% errors</a>.
-    {% endtrans %}
+    Alternatively, you can <a href="http://www.checkupdown.com/status/E403.html">learn more about 403 errors</a>.
 </p>
 
 {% endblock content %}

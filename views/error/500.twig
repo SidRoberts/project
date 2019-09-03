@@ -3,9 +3,7 @@
 
 
 {% block title %}
-    {% trans %}
-        Error 500 - Internal Server Error
-    {% endtrans %}
+    Error 500 - Internal Server Error
 {% endblock title %}
 
 
@@ -14,24 +12,18 @@
 
 <div class="page-header">
     <h1 class="page-header-title">
-        {% trans %}
-            Error 500 - Internal Server Error
-        {% endtrans %}
+        Error 500 - Internal Server Error
     </h1>
 </div>
 
 
 
 <p class="lead">
-    {% trans %}
-        This page could be loaded due to an internal server error.
-    {% endtrans %}
+    This page could be loaded due to an internal server error.
 </p>
 
 <p class="lead">
-    {% trans with {"%url%": "http://www.checkupdown.com/status/E500.html", "%code%": "405"} %}
-        Alternatively, you can <a href="%url%">learn more about %code% errors</a>.
-    {% endtrans %}
+    Alternatively, you can <a href="http://www.checkupdown.com/status/E500.html">learn more about 500 errors</a>.
 </p>
 
 {% endblock content %}

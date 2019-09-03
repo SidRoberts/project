@@ -24,7 +24,6 @@ use MyApp\Service\RouterService;
 use MyApp\Service\RouteCollectionService;
 use MyApp\Service\SessionService;
 use MyApp\Service\SlugifyService;
-use MyApp\Service\TranslatorService;
 use MyApp\Service\TwigService;
 use MyApp\Service\UrlService;
 
@@ -55,7 +54,6 @@ class ContainerBuilder
             RouteCollectionService::class,
             SessionService::class,
             SlugifyService::class,
-            TranslatorService::class,
             TwigService::class,
             UrlService::class,
         ];
