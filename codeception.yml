@@ -14,6 +14,7 @@ suites:
         modules:
             enabled:
                 - Asserts
+                - Db
                 - PhpBrowser:
                     url: http://nginx:80/
         coverage:
@@ -24,6 +25,7 @@ suites:
         modules:
             enabled:
                 - Asserts
+                - Db
 
 settings:
     colors: true
@@ -34,8 +36,8 @@ settings:
 modules:
     config:
         Db:
-            dsn: ''
-            user: ''
+            dsn: 'pgsql:host=postgres;dbname=postgres'
+            user: 'postgres'
             password: ''
             dump: tests/_data/dump.sql
 
