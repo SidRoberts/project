@@ -1,14 +1,14 @@
 {
     "dependencies": {
-        "bootstrap": "~4.3.1",
+        "bootstrap":  "~4.3.1",
         "browserify": "16",
-        "sass": "1"
+        "sass":       "1"
     },
     "devDependencies": {
         "standard": "14"
     },
     "scripts": {
-        "test": "node_modules/.bin/standard",
+        "test":        "node_modules/.bin/standard",
         "compile-css": "node_modules/.bin/sass scss/_.sass .compiled/css/main.css"
     }
 }
