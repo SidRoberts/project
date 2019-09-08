@@ -12,3 +12,6 @@
 
 # Codeception
 /tests/_support/_generated/
+
+# PHP-CS-Fixer
+/.php_cs.cache

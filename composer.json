@@ -77,6 +77,8 @@
 
         "squizlabs/php_codesniffer": "~3.4",
 
+        "friendsofphp/php-cs-fixer": "~2.0",
+
         "sensiolabs/security-checker": "~5.0",
 
         "phpmd/phpmd": "~2.6"
