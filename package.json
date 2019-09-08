@@ -9,6 +9,6 @@
     },
     "scripts": {
         "test": "node_modules/.bin/standard",
-        "compile-css": "node_modules/.bin/sass scss/_.scss .compiled/css/main.css"
+        "compile-css": "node_modules/.bin/sass scss/_.sass .compiled/css/main.css"
     }
 }
