@@ -3,7 +3,6 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Symfony\Component\HttpFoundation\Request;
 
 class RequestService extends Service

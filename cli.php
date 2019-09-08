@@ -8,7 +8,6 @@ require ".vendor/autoload.php";
 
 
 use MyApp\Bootstrap;
-
 use Whoops\Handler\PlainTextHandler;
 
 

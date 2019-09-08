@@ -4,8 +4,6 @@ namespace MyApp;
 
 use Sid\Container\Container;
 
-use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
-
 class Bootstrap
 {
     /**

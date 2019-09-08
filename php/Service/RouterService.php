@@ -2,14 +2,10 @@
 
 namespace MyApp\Service;
 
-use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
-
 use Sid\Container\Service;
-
+use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
 use Sid\Framework\Router;
 use Sid\Framework\Router\RouteCollection;
-
-use Zend\Config\Config;
 
 class RouterService extends Service
 {

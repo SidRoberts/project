@@ -3,18 +3,13 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
+use Sid\Flash\Flash;
+use Sid\Flash\Twig\FlashExtension;
 use Sid\TwigWhitelistedFunctions\WhitelistedFunctionsExtension;
 use Sid\Url\Twig\UrlExtension;
-use Sid\Flash\Twig\FlashExtension;
-
-use Sid\Flash\Flash;
-
 use Sid\Url\Url;
-
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
-
 use Zend\Config\Config;
 
 class TwigService extends Service

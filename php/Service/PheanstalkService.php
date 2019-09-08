@@ -3,9 +3,7 @@
 namespace MyApp\Service;
 
 use Pheanstalk\Pheanstalk;
-
 use Sid\Container\Service;
-
 use Zend\Config\Config;
 
 class PheanstalkService extends Service

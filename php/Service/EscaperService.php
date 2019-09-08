@@ -3,7 +3,6 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Zend\Escaper\Escaper;
 
 class EscaperService extends Service

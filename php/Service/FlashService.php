@@ -3,10 +3,8 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Sid\Flash\Flash;
 use Sid\Flash\Formatter\HtmlFormatter;
-
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class FlashService extends Service

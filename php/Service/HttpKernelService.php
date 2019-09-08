@@ -3,12 +3,10 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
-use Sid\Framework\Router;
 use Sid\Framework\Dispatcher;
 use Sid\Framework\Dispatcher\Path;
 use Sid\Framework\Kernel;
-
+use Sid\Framework\Router;
 use Zend\Config\Config;
 
 class HttpKernelService extends Service

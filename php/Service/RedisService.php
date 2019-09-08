@@ -2,8 +2,8 @@
 
 namespace MyApp\Service;
 
-use Sid\Container\Service;
 use Redis;
+use Sid\Container\Service;
 use Zend\Config\Config;
 
 class RedisService extends Service

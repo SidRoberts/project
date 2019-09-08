@@ -3,7 +3,6 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
 class EventDispatcherService extends Service

@@ -2,8 +2,6 @@
 
 namespace MyApp;
 
-use Sid\Container\Container;
-
 use MyApp\Service\AnnotationsService;
 use MyApp\Service\CacheService;
 use MyApp\Service\ConfigService;
@@ -20,12 +18,13 @@ use MyApp\Service\PheanstalkService;
 use MyApp\Service\RedisService;
 use MyApp\Service\RequestService;
 use MyApp\Service\ResolverService;
-use MyApp\Service\RouterService;
 use MyApp\Service\RouteCollectionService;
+use MyApp\Service\RouterService;
 use MyApp\Service\SessionService;
 use MyApp\Service\SlugifyService;
 use MyApp\Service\TwigService;
 use MyApp\Service\UrlService;
+use Sid\Container\Container;
 
 class ContainerBuilder
 {

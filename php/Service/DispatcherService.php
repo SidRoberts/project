@@ -2,10 +2,8 @@
 
 namespace MyApp\Service;
 
-use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
-
 use Sid\Container\Service;
-
+use Sid\ContainerResolver\Resolver\SidContainer as Resolver;
 use Sid\Framework\Dispatcher;
 
 class DispatcherService extends Service

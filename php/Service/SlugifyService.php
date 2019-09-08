@@ -3,7 +3,6 @@
 namespace MyApp\Service;
 
 use Cocur\Slugify\Slugify;
-
 use Sid\Container\Service;
 
 class SlugifyService extends Service

@@ -7,7 +7,6 @@ require ".vendor/autoload.php";
 
 
 use MyApp\Bootstrap;
-
 use Whoops\Handler\PrettyPageHandler;
 
 

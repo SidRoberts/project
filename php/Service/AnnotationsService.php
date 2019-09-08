@@ -2,12 +2,10 @@
 
 namespace MyApp\Service;
 
-use Sid\Container\Service;
-
-use Zend\Config\Config;
-
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\FileCacheReader;
+use Sid\Container\Service;
+use Zend\Config\Config;
 
 class AnnotationsService extends Service
 {

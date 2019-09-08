@@ -2,12 +2,10 @@
 
 namespace MyApp\Service;
 
-use Sid\Container\Service;
-
-use Redis;
-
-use Monolog\Logger;
 use Monolog\Handler\RedisHandler;
+use Monolog\Logger;
+use Redis;
+use Sid\Container\Service;
 
 class MonologService extends Service
 {

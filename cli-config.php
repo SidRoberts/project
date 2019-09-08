@@ -7,7 +7,6 @@ require '.vendor/autoload.php';
 
 
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
-
 use MyApp\Bootstrap;
 
 

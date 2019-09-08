@@ -2,11 +2,9 @@
 
 namespace MyApp\Service;
 
-use Sid\Container\Service;
-
 use Doctrine\Common\Cache\RedisCache;
-
 use Redis;
+use Sid\Container\Service;
 
 class CacheService extends Service
 {

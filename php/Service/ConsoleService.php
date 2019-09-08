@@ -3,14 +3,10 @@
 namespace MyApp\Service;
 
 use Exception;
-
 use MyApp\Console\Command;
-
 use Sid\Container\Container;
 use Sid\Container\Service;
-
 use Symfony\Component\Console\Application;
-
 use Zend\Config\Config;
 
 class ConsoleService extends Service

@@ -3,9 +3,7 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Sid\Url\Url;
-
 use Zend\Config\Config;
 
 class UrlService extends Service

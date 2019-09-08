@@ -3,7 +3,6 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class SessionService extends Service

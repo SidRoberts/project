@@ -3,9 +3,7 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Sid\Framework\Router\RouteCollection;
-
 use Zend\Config\Config;
 
 class RouteCollectionService extends Service

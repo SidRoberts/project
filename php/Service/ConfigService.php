@@ -3,9 +3,7 @@
 namespace MyApp\Service;
 
 use Sid\Container\Service;
-
 use Symfony\Component\Yaml\Yaml;
-
 use Zend\Config\Config;
 
 class ConfigService extends Service

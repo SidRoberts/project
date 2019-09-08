@@ -3,9 +3,7 @@
 namespace MyApp\Service;
 
 use Doctrine\ORM\EntityManager;
-
 use Sid\Container\Service;
-
 use Zend\Config\Config;
 
 class DoctrineService extends Service
