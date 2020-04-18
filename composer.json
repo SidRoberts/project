@@ -57,7 +57,7 @@
 
         "pda/pheanstalk": "~4.0",
 
-        "cocur/slugify": "~3.2",
+        "cocur/slugify": "~4.0",
 
         "filp/whoops": "~2.3",
 
