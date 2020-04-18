@@ -40,7 +40,7 @@
         "symfony/event-dispatcher": "~4.2",
         "symfony/http-foundation":  "~4.2",
         "symfony/twig-bridge":      "~4.2",
-        "symfony/yaml":             "~4.2",
+        "symfony/yaml":             "~5.0",
 
         "doctrine/annotations": "~1.6",
         "doctrine/cache":       "~1.8",
