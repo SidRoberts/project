@@ -37,7 +37,7 @@
         "guzzlehttp/guzzle": "~6.3",
 
         "symfony/console":          "~5.0",
-        "symfony/event-dispatcher": "~4.2",
+        "symfony/event-dispatcher": "~5.0",
         "symfony/http-foundation":  "~4.2",
         "symfony/twig-bridge":      "~5.0",
         "symfony/yaml":             "~5.0",
