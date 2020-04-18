@@ -49,9 +49,9 @@
 
         "monolog/monolog": "~1.24",
 
-        "zendframework/zend-config":    "~3.2",
-        "zendframework/zend-escaper":   "~2.6",
-        "zendframework/zend-validator": "~2.12",
+        "laminas/laminas-config":    "~3.2",
+        "laminas/laminas-escaper":   "~2.6",
+        "laminas/laminas-validator": "~2.12",
 
         "league/flysystem": "~1.0",
 
