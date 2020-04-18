@@ -76,7 +76,7 @@
 
         "friendsofphp/php-cs-fixer": "~2.0",
 
-        "sensiolabs/security-checker": "~5.0",
+        "sensiolabs/security-checker": "~6.0",
 
         "phpmd/phpmd": "~2.6"
     },
