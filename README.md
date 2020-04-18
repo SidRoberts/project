@@ -1,6 +1,6 @@
 # Base Project Template
 
-The starting point for all my projects.
+The starting point for all my web projects.
 
 
 
