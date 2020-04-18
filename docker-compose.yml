@@ -1,7 +1,8 @@
 version: '3'
 services:
   nginx:
-    image: nginx:1-alpine
+    image:   nginx:1-alpine
+    restart: on-failure
     links:
       - php
     ports:
@@ -10,7 +11,8 @@ services:
       - .:/app/
       - ./deploy/nginx/site.conf:/etc/nginx/conf.d/site.conf
   php:
-    build: deploy/php/
+    build:   deploy/php/
+    restart: on-failure
     links:
       - postgres
       - redis
@@ -18,7 +20,8 @@ services:
     volumes:
       - .:/app/
   background:
-    build: deploy/background/
+    build:   deploy/background/
+    restart: on-failure
     links:
       - nginx
       - postgres
@@ -27,8 +30,11 @@ services:
     volumes:
       - .:/app/
   postgres:
-    image: postgres:11.4-alpine
+    image:   postgres:11.4-alpine
+    restart: on-failure
   redis:
-    image: redis:5-alpine
+    image:   redis:5-alpine
+    restart: on-failure
   beanstalkd:
-    image: schickling/beanstalkd:latest
+    image:   schickling/beanstalkd:latest
+    restart: on-failure
