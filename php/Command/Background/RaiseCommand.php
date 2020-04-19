@@ -40,7 +40,9 @@ final class RaiseCommand extends \MyApp\Console\Command
 
         $jobInput = new ArrayInput($body);
 
-        $command = $this->getApplication()->find(
+        $application = $this->getApplication();
+
+        $command = $application->find(
             $body["command"]
         );
 
