@@ -5,7 +5,7 @@ namespace MyApp\Command\Background;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class ManagerCommand extends \MyApp\Console\Command
+final class ManagerCommand extends \MyApp\Console\Command
 {
     public function configure()
     {

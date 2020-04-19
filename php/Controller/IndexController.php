@@ -5,7 +5,7 @@ namespace MyApp\Controller;
 use Sid\Framework\Controller;
 use Sid\Framework\Router\Route\Uri;
 
-class IndexController extends Controller
+final class IndexController extends Controller
 {
     /**
      * @Uri("/")

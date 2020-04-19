@@ -7,7 +7,7 @@ use Sid\Framework\Router\Route\Uri;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class ErrorController extends Controller
+final class ErrorController extends Controller
 {
     /**
      * @Uri("/error/403")
