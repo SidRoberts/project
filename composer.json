@@ -31,7 +31,7 @@
         "sidroberts/flash":                      "~3.0",
         "sidroberts/framework":                  "~4.0",
         "sidroberts/forms":                      "~3.0",
-        "sidroberts/twig-whitelisted-functions": "~2.0",
+        "sidroberts/twig-whitelisted-functions": "~3.0",
         "sidroberts/url":                        "~2.0",
 
         "guzzlehttp/guzzle": "~6.3",
@@ -61,7 +61,7 @@
 
         "filp/whoops": "~2.3",
 
-        "twig/twig": "~2.7"
+        "twig/twig": "~3.0"
     },
 
     "require-dev": {
