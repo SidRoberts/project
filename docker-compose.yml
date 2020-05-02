@@ -36,5 +36,5 @@ services:
     image:   redis:5-alpine
     restart: on-failure
   beanstalkd:
-    image:   schickling/beanstalkd:latest
+    image:   sidroberts/beanstalkd:1.11
     restart: on-failure
