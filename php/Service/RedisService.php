@@ -4,7 +4,6 @@ namespace MyApp\Service;
 
 use Redis;
 use Sid\Container\Service;
-use Zend\Config\Config;
 
 class RedisService extends Service
 {
@@ -18,13 +17,13 @@ class RedisService extends Service
         return true;
     }
 
-    public function resolve(Config $config)
+    public function resolve()
     {
         $redis = new Redis();
 
         $redis->connect(
-            $config->redis->host,
-            $config->redis->port
+            getenv("REDIS_HOST"),
+            getenv("REDIS_PORT")
         );
 
         return $redis;

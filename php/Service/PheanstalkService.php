@@ -4,7 +4,6 @@ namespace MyApp\Service;
 
 use Pheanstalk\Pheanstalk;
 use Sid\Container\Service;
-use Zend\Config\Config;
 
 class PheanstalkService extends Service
 {
@@ -18,11 +17,11 @@ class PheanstalkService extends Service
         return true;
     }
 
-    public function resolve(Config $config)
+    public function resolve()
     {
         $pheanstalk = Pheanstalk::create(
-            $config->pheanstalk->host,
-            $config->pheanstalk->port
+            getenv("PHEANSTALK_HOST"),
+            (int) getenv("PHEANSTALK_PORT")
         );
 
         return $pheanstalk;

@@ -28,7 +28,13 @@ class DoctrineService extends Service
         );
 
         $entityManager = EntityManager::create(
-            $config->doctrine->toArray(),
+            [
+                "driver"   => "pdo_pgsql",
+                "host"     => getenv("POSTGRES_HOST"),
+                "user"     => getenv("POSTGRES_USER"),
+                "password" => getenv("POSTGRES_PASSWORD"),
+                "dbname"   => getenv("POSTGRES_DB"),
+            ],
             $doctrineConfig
         );
 
