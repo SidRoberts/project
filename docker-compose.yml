@@ -22,9 +22,11 @@ services:
     volumes:
       - .:/app/
   background:
-    build:    deploy/background/
-    restart:  on-failure
-    env_file: .env
+    build:       deploy/php/
+    restart:     on-failure
+    command:     php /app/cli.php background:manager
+    working_dir: /app/
+    env_file:    .env
     links:
       - nginx
       - postgres
