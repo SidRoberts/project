@@ -9,7 +9,7 @@ services:
       - "80:80"
     volumes:
       - .:/app/
-      - ./deploy/nginx/site.conf:/etc/nginx/conf.d/site.conf
+      - ./deploy/nginx/site.conf:/etc/nginx/conf.d/site.conf:ro
   php:
     build:   deploy/php/
     restart: on-failure
