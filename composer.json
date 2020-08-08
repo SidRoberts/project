@@ -34,8 +34,6 @@
         "sidroberts/twig-whitelisted-functions": "~3.0",
         "sidroberts/url":                        "~2.0",
 
-        "guzzlehttp/guzzle": "~6.3",
-
         "symfony/console":          "~5.0",
         "symfony/event-dispatcher": "~5.0",
         "symfony/http-foundation":  "~4.2",
