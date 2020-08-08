@@ -53,8 +53,6 @@
         "laminas/laminas-escaper":   "~2.6",
         "laminas/laminas-validator": "~2.12",
 
-        "league/flysystem": "~1.0",
-
         "pda/pheanstalk": "~4.0",
 
         "cocur/slugify": "~4.0",

@@ -11,7 +11,6 @@ use MyApp\Service\DoctrineService;
 use MyApp\Service\EscaperService;
 use MyApp\Service\EventDispatcherService;
 use MyApp\Service\FlashService;
-use MyApp\Service\FlysystemService;
 use MyApp\Service\HttpKernelService;
 use MyApp\Service\MonologService;
 use MyApp\Service\PheanstalkService;
@@ -42,7 +41,6 @@ class ContainerBuilder
             EscaperService::class,
             EventDispatcherService::class,
             FlashService::class,
-            FlysystemService::class,
             HttpKernelService::class,
             MonologService::class,
             PheanstalkService::class,
