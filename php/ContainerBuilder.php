@@ -20,7 +20,6 @@ use MyApp\Service\ResolverService;
 use MyApp\Service\RouteCollectionService;
 use MyApp\Service\RouterService;
 use MyApp\Service\SessionService;
-use MyApp\Service\SlugifyService;
 use MyApp\Service\TwigService;
 use MyApp\Service\UrlService;
 use Sid\Container\Container;
@@ -50,7 +49,6 @@ class ContainerBuilder
             RouterService::class,
             RouteCollectionService::class,
             SessionService::class,
-            SlugifyService::class,
             TwigService::class,
             UrlService::class,
         ];

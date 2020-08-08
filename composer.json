@@ -53,8 +53,6 @@
 
         "pda/pheanstalk": "~4.0",
 
-        "cocur/slugify": "~4.0",
-
         "filp/whoops": "~2.3",
 
         "twig/twig": "~3.0"
