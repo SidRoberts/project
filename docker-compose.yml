@@ -43,6 +43,6 @@ services:
     restart:  on-failure
     env_file: .env
   beanstalkd:
-    image:    sidroberts/beanstalkd:1.11
+    image:    sidroberts/beanstalkd:1.12
     restart:  on-failure
     env_file: .env
